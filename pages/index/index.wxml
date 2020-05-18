@@ -1,0 +1,33 @@
+<view id="box">
+
+
+	<view class="audio">
+		<audio src="{{src}}" controls="true"></audio>
+	</view>
+
+	<view class="answer">
+		<view
+	 wx:for="{{songname_user}}" 
+		wx:key="index" 
+		 bindtap="songnamechange"
+		  id="{{index}}"
+			class="{{fal ? 'cuowu':'s'}}"
+			>{{item}}</view>
+	</view>
+
+	<view class="select">
+
+
+		<view class="s">
+			<view wx:for="{{keyword}}" wx:key="index"  bindtap="xuan" id="{{index}}">{{item}}</view>
+		</view>
+
+	</view>
+
+
+	<view class="sos">
+		<view>太难搞不定？要不看看你的朋友会不会</view>
+		<button id="but">sos</button>
+	</view>
+
+</view>

@@ -1,0 +1,80 @@
+.audio{
+  display: flex;
+  justify-content: center;
+}
+
+.answer{
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+.answer view{
+  width: 80rpx;
+  height: 80rpx;
+  margin:0  10rpx;
+  background-color: #e4e9e3;
+  text-align: center;
+  line-height: 80rpx;
+  font-weight: 800;
+  border: 1rpx solid transparent;
+}
+
+
+.select{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  margin-top: 60rpx;
+}
+.select .s{
+  width: 100%;
+}
+.select .s view{
+  width: 23%;
+  margin: 0 5rpx;
+  height: 80rpx;
+  background-color: #e4e9e3;
+  text-align: center;
+  line-height: 80rpx;
+  float: left;
+  margin-top: 8rpx;
+ box-shadow: 0 5rpx 0rpx 0rpx #a2a7a1;
+ border-radius: 10 rpx;
+
+}
+
+.sos{
+  width: 100%;
+  display: flex;
+  font-size: 30rpx;
+  /* border:1rpx solid black; */
+  align-items: center;
+  position: absolute;
+  bottom: 20rpx;
+  justify-content: center;
+}
+.sos button{
+  width: 140rpx;
+  height: 80rpx;
+  margin:0;
+  background-color: #eba05c;
+  font-size: 80rpx;
+  color: white;
+  padding: 0 0;
+  line-height: 70rpx;
+  text-align: center;
+}
+@keyframes donghua{
+  from{transform: rotate(15deg);}
+  25%{transform: rotate(0deg)}
+  50%{transform: rotate(-15deg)}
+  to{transform: rotate(0deg)}
+}
+.cuowu{
+  border: 1rpx solid red !important ;
+  animation: donghua 0.1s linear 10 both;
+}
